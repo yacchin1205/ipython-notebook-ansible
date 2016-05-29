@@ -4,5 +4,5 @@ Dockerfile for cloud operation environtment (IPython Notebook + Ansible + etc. t
 
 ```
 $ sudo docker build -t nii_dev/ipython-notebook .
-$ sudo docker run -d -p 10080:8080 -v /var/lib/ipython-notebook:/tmp/notebook nii_dev/ipython-notebook
+$ sudo docker run -d -p 10080:8888 -v /var/lib/ipython-notebook:/notebooks nii_dev/ipython-notebook
 ```
